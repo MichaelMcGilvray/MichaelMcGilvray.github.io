@@ -1,0 +1,172 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Michael McGilvray, michael_mcgilvray@student.uml.edu
+Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by MM on September 15, 2021 at 3:00PM
+
+This web page gives some background information about Michael McGilvray and his
+experience as of his senior year at UML. It includes links to his LinkedIn and
+GitHub pages, a brief introduction to the author, and the most updated version
+of his resume.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Michael McGilvray</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Alternative method of navigating the site -->
+        <div id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+
+        <!-- These clr divs clear after each float so the next elements
+        don't also float when they shouldn't -->
+        <div class="clr"></div>
+
+        <!-- Main title section -->
+        <div id="home">
+            <h1>Michael McGilvray</h1>
+            <p>Hello, my name's Michael. I'm a computer science student.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/mikey-mcgilvray/"><img src="images/linkedin-logo.png" alt="LinkedIn logo"></a>
+            <a href="https://github.com/MichaelMcGilvray"><img src="images/github-logo.png" alt="GitHub logo"></a>
+            <a href="mailto:mikeymcgilvray@gmail.com"><img src="images/email-logo.png" alt="Letter icon"></a>
+        </div>
+
+        <div class="clr"></div>
+        <hr>
+
+        <div id="aboutme">
+        <h2>About me</h2>
+            <div id="aboutmeContainer">
+                <img src="images/michael.jpg" alt="Michael McGilvray in a blue suit">
+                <span>I am a senior studying computer science at the University of
+                    Massachusetts Lowell interested in software development. I’ve 
+                    been fascinated with computer science ever since my freshman year
+                    of high school where I found that I enjoy creating things using
+                    computers. Through my time at UML, I’ve strengthened my 
+                    knowledge regarding core computer science concepts with a strong
+                    understanding of low-level programming.</span>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+        <hr>
+
+        <div id="resume">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <!-- Left and right align allow text to be placed on the same line -->
+            <p class="alignleft">University of Massachusetts Lowell, Lowell, MA</p> 
+            <p class="alignright">Anticipated May 2022</p>
+            <div class="clr"></div>
+
+            <p class="alignleft">Candidate for a Bachelor of Science in Computer Science</p>
+            <p class="alignright">GPA 3.99</p>
+            <div class="clr"></div>
+
+            <ul>
+                <li>Dean’s List All Semesters</li>
+                <li>Relevant Coursework: Computing 1 – 4, Foundations of Computer Science, Software
+                    Engineering 1 – 2, Assembly Programming Language, Computer Architecture, Operating
+                    Systems, Organization of Programming Languages, Discrete Structures 1 - 2</li>
+            </ul>
+
+            <h3>Skills</h3>
+            <table>
+                <tr>
+                    <th>Languages</th>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Git</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Visual Studio</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Photoshop</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Illustrator</td>
+                </tr>
+            </table>
+
+            <h3>Academic Projects</h3>
+            <p class="alignleft">VS Code Time Management Extension</p>
+            <p class="alignright">October 2020 – December 2020</p>
+            <div class="clr"></div>
+            <ul>
+                <li>Lead a four-person group of students in developing an extension for VS Code using the
+                    VS Code API in JavaScript.</li>
+                <li>Documented the group’s planning process using UML diagrams.</li>
+                <li>Coordinated through regular Scrum meetings and pair programming sessions.</li>
+            </ul>
+            <br>
+
+            <p class="alignleft">Evil Hangman January</p>
+            <p class="alignright">2019 – May 2019</p>
+            <div class="clr"></div>
+            <ul>
+                <li>Created a text-based game of hangman in C that utilized an AVL tree to maintain a list of
+                    every word in the English dictionary to avoid guesses by the player.</li>
+                <li>Used opaque objects to implement self-made string and vector libraries.</li>
+            </ul>
+
+            <h3>Work Experience</h3>
+            <p class="alignleft">Honey Pot Hill Orchards, Stow, MA</p>
+            <p class="alignright">July 2017 – December 2020</p>
+            <div class="clr"></div>
+            <p>Senior Sales Associate</p>
+            <ul>
+                <li>Utilized leadership and teamwork skills to train and manage groups of 4 - 6 employees.</li>
+                <li>Demonstrated outstanding ability to juggle responsibilities by tracking inventory,
+                    restocking, and delegating tasks to employees.</li>
+                <li>Exhibited strong customer service skills when fulfilling custom orders over the phone and
+                    in person.</li>
+            </ul>
+            <br>
+
+            <p class="alignleft">University of Massachusetts Lowell, Lowell, MA</p>
+            <p class="alignright">May 2021 – August 2021</p>
+            <div class="clr"></div>
+            <p>Instructional Technologies Intern</p>
+            <ul>
+                <li>Lead and worked alongside a group of six interns to maintain, update, and install
+                    hundreds of machines.</li>
+                <li>Troubleshot various software and hardware issues on Windows, Mac, and Linux
+                    computers</li>
+                <li>Assisted in restoring Windows, Mac, and Linux systems after the UML cyberattack.</li>
+            </ul>
+
+        </div>
+        
+        <a class="button" href="pdfs/Michael-McGilvray-Resume.pdf">View as a PDF</a>
+
+
+        <div id="footer">
+            <p>Copyright &copy; 2021 Michael McGilvray Personal Website</p>
+            <p class="alignleft">mikeymcgilvray@gmail.com</p>
+            <p class="alignleft">18 Hale Road, Stow, MA</p>
+            <p class="alignleft" >972-837-0307</p>
+            <div class="clr"></div>
+        </div>
+    </body>
+</html>
